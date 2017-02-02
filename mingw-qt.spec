@@ -14,7 +14,7 @@
 
 Name:           mingw-qt
 Version:        4.8.7
-Release:        1%{?pre}%{?dist}
+Release:        2%{?pre}%{?dist}
 Summary:        Qt for Windows
 
 License:        GPLv3 with exceptions or LGPLv2 with exceptions
@@ -1112,6 +1112,9 @@ sed -i s@'$${QT_LIBINFIX}d'@'d$${QT_LIBINFIX}'@ $RPM_BUILD_ROOT%{mingw64_datadir
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 4.8.7-2
+- Rebuild with GCC 5.4.0
+
 * Sat May  7 2016 Erik van Pienbroek <epienbro@fedoraproject.org> - 4.8.7-1
 - Update to 4.8.7
 - Fix FTBFS against GCC 6
